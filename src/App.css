@@ -1504,7 +1504,7 @@ footer{
     width: 304px;
   }
   .cinema-showtimes, .order-container, .cinema-container {
-    max-width: 350px;
+    max-width: 375px;
   }
   .select-address h3{
     display: none;
@@ -1514,11 +1514,16 @@ footer{
   }
   .select-address div button {
     width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .select-address div button:last-child{
+    margin: 0;
   }
   .select-address div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
   }
   .btn-add:last-child {
     margin-right: 10px;
@@ -1527,13 +1532,26 @@ footer{
     display: none;
   }
   .order-info-content h2 {
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .order-info-content p{
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .order-info-content p i {
+    font-size: 20px;
   }
   .price-info h5 {
     font-size: 15px;
+    font-weight: 500;
   }
   .price-info h4 {
     font-size: 15px;
+    font-weight: 500;
+  }
+  .amount-total span {
+    font-weight: 500;
   }
   .amount-icon{
     width: 20px;
@@ -1557,13 +1575,17 @@ footer{
     line-height: 24px;
   }
   .bill-total {
-    margin-top: 0;
+    margin-top: 10px;
   }
   .seat-select-info h3 {
     font-size: 13px;
   }
   .seat-box {
     padding: 5px;
+    flex: 1;
+  }
+  .seat-box-row .seat{
+    flex: 1;
   }
   .seat {
     width: 15px;
@@ -1591,12 +1613,29 @@ footer{
   }
   .food-container {
     flex-wrap: wrap;
+    padding: 10px;
   }
   .food-box{
     width: 100%;
     margin-bottom: 15px;
   }
+  .food-box .price-amount .amount-icon,
+  .food-box .price-amount .amount-total {
+    width: 35px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .food-box .price-amount {
+    font-size: 20px;
+  }
+  .food-box h2 {
+    padding: 5px 0;
+  }
   .food-img{
+    padding: 10px 10px;
+    border-radius: 10px;
     width: 100%;
   }
   .form-check-box {
@@ -1604,6 +1643,11 @@ footer{
   }
   .form-col{
     margin-top: 0px;
+    margin-right: 0px;
+  }
+  .info-container h1 {
+    margin-bottom: 15px;
+    font-size: 27px;
   }
   .event-box{
     flex-wrap: wrap;
@@ -1611,5 +1655,127 @@ footer{
   .event {
     width: 100%;
     margin-bottom: 15px;
+  }
+  .film-container h1, .event-container h1 {
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .event-container {
+    padding: 0px 15px;
+  }
+  header{
+    padding: 5px;
+  }
+  .banner-box {
+    padding-top: 70px;
+  }
+  .right-menu i {
+    cursor: pointer;
+    font-size: 35px;
+  }
+  .right-menu ul li {
+    font-size: 21px;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+  }
+  .icon{
+    font-size: 10px !important;
+    margin-right: 10px;
+  }
+  .cinema-add-main {
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .cinema-add h3 {
+    line-height: 30px;
+    padding: 5px;
+    font-size: 23px;
+    font-weight: 400;
+  }
+  .cinema-add-main p {
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .confim-title h1 {
+    font-size: 32px;
+  }
+  .confim-title p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .confim-title {
+    margin-top: 15px;
+    padding: 17px;
+  }
+  .slot h3 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .slot {
+    border-radius: 10px;
+    margin: 5px 5px 5px 0;
+  }
+  .address-container {
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .address-slot{
+    border-radius: 15px;
+  }
+  .cinema-add{
+    margin-bottom: 0;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+  .cinema-add:first-child{
+    margin-top: 0;
+  }
+  .cinema-add-main{
+    border-radius: 12px;
+  }
+  .cinema-add-main, .schedule {
+    font-size: 14px;
+  }
+  .film-content-main span h4 {
+    font-size: 15px;
+  }
+  .film-content-main h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .film-classify-box {
+    width: 50px;
+  }
+  .address-slot-info h3, .cinema-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .address-top-container small {
+    margin: 5px 0;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .film-classify-box h4 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .address-slot-container {
+    border-radius: 20px;
+  }
+  .order-info-content {
+    margin-left: 10px;
+    line-height: 20px;
+  }
+  .status-bar {
+    font-size: 14px;
+    margin-top: 0px;
+  }
+  .seat-container-bottom {
+    width: 100%;
+  }
+  .info-container{
+    padding: 10px;
   }
 }

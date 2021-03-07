@@ -43,7 +43,7 @@ const Order = (prop) => {
         setBill(curBill);
     }
     const handleClickStep = () => {
-        if ((step === 1 && bill.length !== 0) || step === 3) {
+        if ((step === 1 && bill.length !== 0) || step === 3 || step===5) {
             setStep(step + 1);
         }
         if (step === 2 && seat.length !== 0) {
@@ -54,7 +54,7 @@ const Order = (prop) => {
                 setStep(step + 1);
             }
         }
-        if ( step===4 && infoCus.name !== "" && infoCus.gender!=="" && infoCus.email!=="" && infoCus.age!==0) {
+        if (step === 4 && infoCus.name !== "" && infoCus.gender !== "" && infoCus.email !== "" && infoCus.age !== 0) {
             axios.post('https://603913a8d2b9430017d23bc1.mockapi.io/customer', {
                 name: infoCus.name,
                 email: infoCus.email,
@@ -65,7 +65,7 @@ const Order = (prop) => {
                 food: food
             })
                 .then((response) => {
-                    setStep(step+1)
+                    setStep(step + 1)
                 })
                 .catch((error) => {
                     console.log(error);
