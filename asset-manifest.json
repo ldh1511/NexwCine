@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/NexwCine/static/css/main.fb9fe75f.chunk.css",
+    "main.js": "/NexwCine/static/js/main.6624300d.chunk.js",
+    "main.js.map": "/NexwCine/static/js/main.6624300d.chunk.js.map",
+    "runtime-main.js": "/NexwCine/static/js/runtime-main.db3edae4.js",
+    "runtime-main.js.map": "/NexwCine/static/js/runtime-main.db3edae4.js.map",
+    "static/js/2.9e179a3e.chunk.js": "/NexwCine/static/js/2.9e179a3e.chunk.js",
+    "static/js/2.9e179a3e.chunk.js.map": "/NexwCine/static/js/2.9e179a3e.chunk.js.map",
+    "static/js/3.bcfc4aa2.chunk.js": "/NexwCine/static/js/3.bcfc4aa2.chunk.js",
+    "static/js/3.bcfc4aa2.chunk.js.map": "/NexwCine/static/js/3.bcfc4aa2.chunk.js.map",
+    "index.html": "/NexwCine/index.html",
+    "static/css/main.fb9fe75f.chunk.css.map": "/NexwCine/static/css/main.fb9fe75f.chunk.css.map",
+    "static/js/2.9e179a3e.chunk.js.LICENSE.txt": "/NexwCine/static/js/2.9e179a3e.chunk.js.LICENSE.txt",
+    "static/media/HO00002213.c39faa37.jpg": "/NexwCine/static/media/HO00002213.c39faa37.jpg",
+    "static/media/banner.4f84e192.jpg": "/NexwCine/static/media/banner.4f84e192.jpg",
+    "static/media/banner01.ba37dd72.jpg": "/NexwCine/static/media/banner01.ba37dd72.jpg",
+    "static/media/food2.b3bdb782.png": "/NexwCine/static/media/food2.b3bdb782.png",
+    "static/media/loading.2f005b9a.gif": "/NexwCine/static/media/loading.2f005b9a.gif",
+    "static/media/logo (2).2d3a1f3b.png": "/NexwCine/static/media/logo (2).2d3a1f3b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db3edae4.js",
+    "static/js/2.9e179a3e.chunk.js",
+    "static/css/main.fb9fe75f.chunk.css",
+    "static/js/main.6624300d.chunk.js"
+  ]
+}
