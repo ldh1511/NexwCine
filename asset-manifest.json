@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/NexwCine/static/css/main.7917e4cf.chunk.css",
-    "main.js": "/NexwCine/static/js/main.1c9a70fb.chunk.js",
-    "main.js.map": "/NexwCine/static/js/main.1c9a70fb.chunk.js.map",
+    "main.css": "/NexwCine/static/css/main.8ba532fb.chunk.css",
+    "main.js": "/NexwCine/static/js/main.5b113214.chunk.js",
+    "main.js.map": "/NexwCine/static/js/main.5b113214.chunk.js.map",
     "runtime-main.js": "/NexwCine/static/js/runtime-main.db3edae4.js",
     "runtime-main.js.map": "/NexwCine/static/js/runtime-main.db3edae4.js.map",
     "static/js/2.9e179a3e.chunk.js": "/NexwCine/static/js/2.9e179a3e.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.bcfc4aa2.chunk.js": "/NexwCine/static/js/3.bcfc4aa2.chunk.js",
     "static/js/3.bcfc4aa2.chunk.js.map": "/NexwCine/static/js/3.bcfc4aa2.chunk.js.map",
     "index.html": "/NexwCine/index.html",
-    "static/css/main.7917e4cf.chunk.css.map": "/NexwCine/static/css/main.7917e4cf.chunk.css.map",
+    "static/css/main.8ba532fb.chunk.css.map": "/NexwCine/static/css/main.8ba532fb.chunk.css.map",
     "static/js/2.9e179a3e.chunk.js.LICENSE.txt": "/NexwCine/static/js/2.9e179a3e.chunk.js.LICENSE.txt",
     "static/media/HO00002213.c39faa37.jpg": "/NexwCine/static/media/HO00002213.c39faa37.jpg",
     "static/media/banner.4f84e192.jpg": "/NexwCine/static/media/banner.4f84e192.jpg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.db3edae4.js",
     "static/js/2.9e179a3e.chunk.js",
-    "static/css/main.7917e4cf.chunk.css",
-    "static/js/main.1c9a70fb.chunk.js"
+    "static/css/main.8ba532fb.chunk.css",
+    "static/js/main.5b113214.chunk.js"
   ]
 }
