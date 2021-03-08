@@ -3,10 +3,15 @@ import Poster from './Poster';
 const Film = ({ data, filmSelect }) => {
     const [count, setCount] = useState(0);
     const ref = useRef(null);
+    const filmBox=useRef();
+    const getWidth=()=>{
+        return filmBox.current.childNodes[0].clientWidth;
+    }
     const rightClick = () => {
         let number = count;
-        if (number <= (data.length - 5) * 300) {
-            number = number + 300;
+        let amountFilmBox=ref.current.clientWidth / (getWidth()+10);
+        if (number < (data.length - amountFilmBox) * (getWidth()+10)) {
+            number = number + (getWidth()+10);
         }
         else {
             number = 0;
@@ -17,11 +22,12 @@ const Film = ({ data, filmSelect }) => {
     }
     const leftClick = () => {
         let number = count;
-        if (count > 0) { number = number - 300; }
+        if (count > 0) { number = number - (getWidth()+10); }
         setCount(number);
         ref.current.style.transform = `translateX(-${number}px)`;
         ref.current.style.transition = 'all .2s';
     }
+        
     return (
         <div className='film-container'>
             <div className='film-bottom'>
@@ -30,7 +36,7 @@ const Film = ({ data, filmSelect }) => {
                 </div>
                 <div className='list-film-box'>
                     <div ref={ref}>
-                        <div className='list-film-container' >
+                        <div className='list-film-container' ref={filmBox}>
                             {data.map((ele, i) =>
                                 <Poster data={ele} filmInfo={filmSelect} key={i} />
                             )}

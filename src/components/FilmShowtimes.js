@@ -31,7 +31,8 @@ const FilmShowtimes = ({ film_cinema, cinema, data, onClick }) => {
         }
         const rightClick = () => {
             let number = count;
-            number <= (dateRange.length - 10) * getWidth() ? number = number + getWidth() : number = 0;
+            let amountSchedule=ref.current.clientWidth / getWidth();
+            number < (dateRange.length - amountSchedule) * getWidth() ? number = number + getWidth() : number = 0;
             setCount(number);
             ref.current.style.transform = `translateX(-${number}px)`;
             ref.current.style.transition = 'all .2s';
