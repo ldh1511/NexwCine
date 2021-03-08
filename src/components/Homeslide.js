@@ -6,7 +6,8 @@ const Homeslide = ({ data }) => {
     const filmConatiner = useRef();
     const rightClick = () => {
         let number = count;
-        if (number <= (data.length - 5) * getWidth()) {
+        let amountFilmBox=ref.current.clientWidth / (getWidth());
+        if (number < (data.length - amountFilmBox) * getWidth()) {
             number = number + getWidth();
         }
         else {
