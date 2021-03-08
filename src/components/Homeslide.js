@@ -4,9 +4,10 @@ const Homeslide = ({ data }) => {
     const [count, setCount] = useState(0);
     const ref = useRef(null);
     const filmConatiner = useRef();
+    const dt = [0, 1, 2, 3, 4, 5];
     const rightClick = () => {
         let number = count;
-        let amountFilmBox=ref.current.clientWidth / (getWidth());
+        let amountFilmBox = ref.current.clientWidth / (getWidth());
         if (number < (data.length - amountFilmBox) * getWidth()) {
             number = number + getWidth();
         }
@@ -37,8 +38,8 @@ const Homeslide = ({ data }) => {
                 <div className='list-film-box'>
                     <div ref={ref}>
                         <div className='list-film-container' ref={filmConatiner}>
-                            {data.map((ele, i) =>
-                                <div className='film-box' key={i} >
+                            {dt.map((ele, i) =>
+                                <div className='film-box' key={i}>
                                     <div className='film-box-img'>
                                         <img src={poster} alt=""></img>
                                     </div>
