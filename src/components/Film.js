@@ -27,7 +27,6 @@ const Film = ({ data, filmSelect }) => {
         ref.current.style.transform = `translateX(-${number}px)`;
         ref.current.style.transition = 'all .2s';
     }
-        
     return (
         <div className='film-container'>
             <div className='film-bottom'>

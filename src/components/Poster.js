@@ -17,7 +17,7 @@ const Poster = ({ data, filmInfo }) => {
             filmInfo(data)
         }
         else {
-            return false;
+            return true;
         }
     }
     return (
