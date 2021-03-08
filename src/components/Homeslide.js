@@ -1,9 +1,9 @@
-import React,{useRef, useState} from "react";
-import Poster from './Poster';
-const Homeslide=({ data})=>{
+import React, { useRef, useState } from "react";
+import poster from '../img/HO00002213.jpg'
+const Homeslide = ({ data }) => {
     const [count, setCount] = useState(0);
     const ref = useRef(null);
-    const filmConatiner=useRef();
+    const filmConatiner = useRef();
     const rightClick = () => {
         let number = count;
         if (number <= (data.length - 5) * getWidth()) {
@@ -23,7 +23,7 @@ const Homeslide=({ data})=>{
         ref.current.style.transform = `translateX(-${number}px)`;
         ref.current.style.transition = 'all .2s';
     }
-    const getWidth=()=>{
+    const getWidth = () => {
         return filmConatiner.current.childNodes[0].clientWidth + 10;
     }
     return (
@@ -37,7 +37,14 @@ const Homeslide=({ data})=>{
                     <div ref={ref}>
                         <div className='list-film-container' ref={filmConatiner}>
                             {data.map((ele, i) =>
-                                <Poster data={ele} key={i} />
+                                <div className='film-box' key={i} >
+                                    <div className='film-box-img'>
+                                        <img src={poster} alt=""></img>
+                                    </div>
+                                    <h3 className='film-box-title'>
+                                        {ele.name}
+                                    </h3>
+                                </div>
                             )}
                         </div>
                     </div>
