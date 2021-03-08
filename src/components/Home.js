@@ -8,7 +8,7 @@ const Home = ({ data }) => {
         return (
             <div className='home-container'>
                 <BannerBox />
-                {/* <Homeslide /> */}
+                <Homeslide data={data} />
                 <Event />
             </div>
         )
