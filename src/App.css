@@ -84,6 +84,7 @@ header{
   cursor: pointer;
 }
 .right-menu ul {
+  width: 80%;
   position: absolute;
   right: 0;
   background: #0c1d53;
@@ -93,17 +94,30 @@ header{
   padding-top: 100px;
   z-index: -1;
   display: none;
+  border-bottom-left-radius: 100%;
+  box-shadow: rgb(0 0 0) 0px 7px 29px 0px;
 }
-.right-menu ul li{
+.right-menu-ul li{
   list-style: none;
   margin-bottom: 15px;
+  font-weight: 500 !important;
 }
-.right-menu ul li a{
+.right-menu-ul li a{
   color: white;
   text-decoration: none;
+  font-weight: 500;
 }
-.active{
+.right-menu-ul.active{
   display: block !important;
+  animation: ani2 .7s forwards;
+}
+@keyframes ani2{
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(0);
+  }
 }
 .banner-box{
   position: relative;
@@ -1781,5 +1795,8 @@ footer{
   }
   .info-container{
     padding: 10px;
+  }
+  .address-slot-content {
+    margin-left: 0;
   }
 }
