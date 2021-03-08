@@ -1719,6 +1719,7 @@ footer{
   .slot {
     border-radius: 10px;
     margin: 5px 5px 5px 0;
+    padding: 10px;
   }
   .address-container {
     padding: 10px;

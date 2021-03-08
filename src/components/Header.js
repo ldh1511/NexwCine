@@ -9,7 +9,8 @@ const Header = () => {
     return (
         <header>
             <div className='logo-box'>
-                <img src={logo} alt=""></img>
+                <NavLink to='/'><img src={logo} alt=""></img>
+                </NavLink>
             </div>
             <ul className='header-nav'>
                 <li>
@@ -24,19 +25,19 @@ const Header = () => {
             <div className="right-menu" >
                 <i className="fas fa-bars" onClick={handleClick}></i>
                 <ul ref={ref}>
-                    <li>
+                    <li onClick={handleClick}>
                         <i className="far fa-circle icon"></i>
                         <NavLink to='/'>Trang chủ</NavLink>
                     </li>
-                    <li>
+                    <li onClick={handleClick}>
                         <i className="far fa-circle icon"></i>
                         <NavLink to='/film-schedule/movie-showtimes'>Lịch chiếu</NavLink>
                     </li>
-                    <li>
+                    <li onClick={handleClick}>
                         <i className="far fa-circle icon"></i>
                         <NavLink to='/cinema'>Hệ thống rạp</NavLink>
                     </li>
-                    <li>
+                    <li onClick={handleClick}>
                         <i className="far fa-circle icon"></i>
                     Khuyến mãi | Sự kiện
                     </li>

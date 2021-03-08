@@ -28,6 +28,7 @@ const Homeslide = ({ data }) => {
     const getWidth = () => {
         return filmConatiner.current.childNodes[0].clientWidth + 10;
     }
+    console.log("render");
     return (
         <div className='film-container'>
             <h1>Thịnh hành</h1>
