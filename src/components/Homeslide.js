@@ -42,9 +42,6 @@ const Homeslide = ({ data }) => {
                                     <div className='film-box-img'>
                                         <img src={poster} alt=""></img>
                                     </div>
-                                    <h3 className='film-box-title'>
-                                        {ele.name}
-                                    </h3>
                                 </div>
                             )}
                         </div>
